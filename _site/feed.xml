@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-02-17T19:07:29+01:00</updated><id>/feed.xml</id><title type="html">Your awesome title</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">Store your dotfiles in GIT!</title><link href="/git/dev/2021/02/11/gitconfig.html" rel="alternate" type="text/html" title="Store your dotfiles in GIT!" /><published>2021-02-11T15:02:46+01:00</published><updated>2021-02-11T15:02:46+01:00</updated><id>/git/dev/2021/02/11/gitconfig</id><content type="html" xml:base="/git/dev/2021/02/11/gitconfig.html">&lt;p&gt;A typical linux/unix/macos/windows (wsl) user account contains a lot of configuration files. Some of those files may simple have the default settings, but if your setup looks anything like mine, apps like git, shell or (neo-)vim  have been highly customized to your needs. At the beginning most of us will probably copy the most important config files from one machine to the other. I know, I did that. In the last couple of years the number of machines I am using on a daily basis increased by a lot.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Linux desktop home&lt;/li&gt;
+  &lt;li&gt;Windows WSL deskop home (dual boot, same machine, as above)&lt;/li&gt;
+  &lt;li&gt;Linux laptop&lt;/li&gt;
+  &lt;li&gt;Work laptop WSL&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;And some machines I do use on a irregular basis&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Couple of Raspberry Pis&lt;/li&gt;
+  &lt;li&gt;Couple of VMs on my desktop machine, mostly linux-based&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I can tell from experience how annoying it is, if you are used to have certain key bindings, aliases, functions or even window manager configurations, but you forgot to copy over the latest version of those files from your desktop. Quite a lot of users will stick to the default settings, default shell, default apps for this particular reason.&lt;/p&gt;
+
+&lt;p&gt;For me this is a not a solution, because I really love optimizing my workflows and learning about new ways how to do that. Learning also eh especially means, learning from others and the internet provides a lot of sources for so-called &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;dotfiles&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Here are a few examples I used in the past for inspiration (copy&amp;amp;paste):&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/LukeSmithxyz/voidrice&quot;&gt;Luke Smith&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/BrodieRobertson/dotfiles&quot;&gt;Brodie Roberson&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/sdaschner/dotfiles&quot;&gt;Sebastian Daschner&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Now I established, why we need customized configuration and why we need them to be same on all the machines we use. A file server and some sort of synchronization, because every change to a config file should be available after a local update.&lt;/p&gt;
+
+&lt;p&gt;A version control system like git comes to mind plus an accessible repository, e.g on &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Github&lt;/code&gt; or &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Gitlab&lt;/code&gt;. Ok, this seems to be very straightforward. Let’s clone an existing dotfiles repo, e.g &lt;a href=&quot;https://github.com/LukeSmithxyz/voidrice&quot;&gt;Luke Smith’s voidrice dotfiles repo&lt;/a&gt;. Let’s assume for now that this would be our repo and not somebody elses. To actually use Luke’s repo, you could fork it on github and use that for cloning.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nb&quot;&gt;cd&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$HOME&lt;/span&gt;/tmp&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; git clone https://github.com/LukeSmithxyz/voidrice&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;But how do we get those files from &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$HOME/tmp/voidrice&lt;/code&gt; to our home directory?&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;We could clone into our $HOME directory&lt;/li&gt;
+  &lt;li&gt;We could write a Makefile or some script to automatically pull the latest changes from the repo and then copy over from repo to . In that case you would have to edit your config files in your repo dir, not in the home dir copy.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://media.ccc.de/v/gpn18-98-one-brain-one-keyboard-one-editor&quot;&gt;Miroslav (@eumiro) GPN 18 Talk  One Brain, One Keyboard, One Editor &lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><category term="git" /><category term="dev" /><summary type="html">A typical linux/unix/macos/windows (wsl) user account contains a lot of configuration files. Some of those files may simple have the default settings, but if your setup looks anything like mine, apps like git, shell or (neo-)vim have been highly customized to your needs. At the beginning most of us will probably copy the most important config files from one machine to the other. I know, I did that. In the last couple of years the number of machines I am using on a daily basis increased by a lot. Linux desktop home Windows WSL deskop home (dual boot, same machine, as above) Linux laptop Work laptop WSL</summary></entry><entry><title type="html">Welcome to Jekyll!</title><link href="/jekyll/update/2021/02/11/welcome-to-jekyll.html" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2021-02-11T15:02:46+01:00</published><updated>2021-02-11T15:02:46+01:00</updated><id>/jekyll/update/2021/02/11/welcome-to-jekyll</id><content type="html" xml:base="/jekyll/update/2021/02/11/welcome-to-jekyll.html">&lt;p&gt;You’ll find this post in your &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
+
+&lt;p&gt;Jekyll requires blog post files to be named according to the following format:&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;YEAR-MONTH-DAY-title.MARKUP&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Where &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;YEAR&lt;/code&gt; is a four-digit number, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;MONTH&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;DAY&lt;/code&gt; are both two-digit numbers, and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;MARKUP&lt;/code&gt; is the file extension representing the format used in the file. After that, include the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
+
+&lt;p&gt;Jekyll also offers powerful support for code snippets:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'Tom'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints 'Hi, Tom' to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Check out the &lt;a href=&quot;https://jekyllrb.com/docs/home&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://talk.jekyllrb.com/&quot;&gt;Jekyll Talk&lt;/a&gt;.&lt;/p&gt;</content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html">You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated.</summary></entry></feed>
